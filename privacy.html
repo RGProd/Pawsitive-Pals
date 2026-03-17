@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — Pawsitive Pals</title>
+  <meta name="description" content="Privacy Policy for Pawsitive Pals. We collect nothing. Here's the proof." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,700;1,9..144,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --cream:    #fdf5e6;
+      --parchment:#f5e6c8;
+      --amber:    #c87820;
+      --amber-lt: #e8a84a;
+      --amber-dk: #8c5012;
+      --brown:    #3a2010;
+      --brown-md: #6b3c18;
+      --text:     #2e1a08;
+      --muted:    #8a6040;
+    }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--cream);
+      color: var(--text);
+      min-height: 100vh;
+    }
+
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.035'/%3E%3C/svg%3E");
+      background-size: 180px;
+      pointer-events: none;
+      z-index: 1000;
+      opacity: 0.6;
+    }
+
+    /* Nav */
+    nav {
+      padding: 18px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: rgba(253, 245, 230, 0.9);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(200, 120, 32, 0.12);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .nav-brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+    }
+
+    .nav-name {
+      font-family: 'Fraunces', serif;
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--brown);
+    }
+
+    nav a.back {
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--muted);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: color 0.2s;
+    }
+
+    nav a.back:hover { color: var(--amber-dk); }
+
+    /* Hero strip */
+    .policy-hero {
+      background: var(--parchment);
+      border-bottom: 1px solid rgba(200,120,32,0.12);
+      padding: 64px 40px 56px;
+      text-align: center;
+    }
+
+    .policy-hero-icon {
+      font-size: 52px;
+      display: block;
+      margin-bottom: 20px;
+    }
+
+    .policy-hero h1 {
+      font-family: 'Fraunces', serif;
+      font-size: clamp(32px, 5vw, 52px);
+      font-weight: 700;
+      color: var(--brown);
+      letter-spacing: -1px;
+      margin-bottom: 12px;
+    }
+
+    .policy-hero p {
+      font-size: 17px;
+      color: var(--muted);
+      font-weight: 300;
+      max-width: 480px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+
+    .policy-date {
+      display: inline-block;
+      margin-top: 20px;
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--amber);
+      background: rgba(200,120,32,0.10);
+      padding: 5px 14px;
+      border-radius: 100px;
+      border: 1px solid rgba(200,120,32,0.20);
+    }
+
+    /* Summary cards */
+    .summary-strip {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 56px 40px 0;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+
+    .summary-card {
+      background: var(--parchment);
+      border: 1px solid rgba(200,120,32,0.12);
+      border-radius: 16px;
+      padding: 24px 20px;
+      text-align: center;
+    }
+
+    .summary-icon { font-size: 30px; display: block; margin-bottom: 10px; }
+
+    .summary-title {
+      font-family: 'Fraunces', serif;
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--brown);
+      margin-bottom: 4px;
+    }
+
+    .summary-desc {
+      font-size: 12px;
+      color: var(--muted);
+      font-weight: 300;
+      line-height: 1.5;
+    }
+
+    /* Main content */
+    .policy-body {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 64px 40px 100px;
+    }
+
+    .policy-section {
+      margin-bottom: 52px;
+    }
+
+    .policy-section h2 {
+      font-family: 'Fraunces', serif;
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--brown);
+      margin-bottom: 14px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid rgba(200,120,32,0.15);
+    }
+
+    .policy-section p {
+      font-size: 15px;
+      line-height: 1.75;
+      color: var(--text);
+      font-weight: 300;
+      margin-bottom: 14px;
+    }
+
+    .policy-section p:last-child { margin-bottom: 0; }
+
+    .policy-section ul {
+      list-style: none;
+      margin-top: 8px;
+    }
+
+    .policy-section ul li {
+      font-size: 15px;
+      font-weight: 300;
+      color: var(--text);
+      line-height: 1.65;
+      padding: 8px 0 8px 28px;
+      position: relative;
+      border-bottom: 1px solid rgba(200,120,32,0.08);
+    }
+
+    .policy-section ul li:last-child { border-bottom: none; }
+
+    .policy-section ul li::before {
+      content: '✓';
+      position: absolute;
+      left: 0;
+      color: var(--amber);
+      font-weight: 500;
+      font-size: 14px;
+    }
+
+    .highlight-box {
+      background: var(--parchment);
+      border-left: 3px solid var(--amber);
+      border-radius: 0 12px 12px 0;
+      padding: 18px 22px;
+      margin: 20px 0;
+    }
+
+    .highlight-box p {
+      margin: 0 !important;
+      font-size: 15px;
+      color: var(--brown-md);
+      font-weight: 400;
+      line-height: 1.6;
+    }
+
+    strong {
+      font-weight: 500;
+      color: var(--brown);
+    }
+
+    a {
+      color: var(--amber-dk);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(140,80,18,0.25);
+      transition: color 0.2s;
+    }
+
+    a:hover { color: var(--amber); }
+
+    /* Footer */
+    footer {
+      background: var(--brown);
+      color: rgba(253,245,230,0.65);
+      text-align: center;
+      padding: 32px 24px;
+      font-size: 13px;
+      font-weight: 300;
+    }
+
+    footer a {
+      color: rgba(253,245,230,0.85);
+      border-bottom: 1px solid rgba(253,245,230,0.20);
+    }
+
+    @media (max-width: 700px) {
+      nav { padding: 14px 20px; }
+      .policy-hero { padding: 48px 24px 40px; }
+      .summary-strip { grid-template-columns: 1fr; padding: 40px 24px 0; }
+      .policy-body { padding: 48px 24px 80px; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <a href="index.html" class="nav-brand">
+      <span style="font-size:22px">🐾</span>
+      <span class="nav-name">Pawsitive Pals</span>
+    </a>
+    <a href="index.html" class="back">← Back to home</a>
+  </nav>
+
+  <div class="policy-hero">
+    <span class="policy-hero-icon">🔒</span>
+    <h1>Privacy Policy</h1>
+    <p>Short version: we collect absolutely nothing about you. Here's the longer version.</p>
+    <span class="policy-date">Last updated: March 2026</span>
+  </div>
+
+  <div class="summary-strip">
+    <div class="summary-card">
+      <span class="summary-icon">🚫</span>
+      <div class="summary-title">No data collected</div>
+      <div class="summary-desc">We collect zero personal information. None.</div>
+    </div>
+    <div class="summary-card">
+      <span class="summary-icon">📱</span>
+      <div class="summary-title">On-device only</div>
+      <div class="summary-desc">Everything stays on your phone. No servers involved.</div>
+    </div>
+    <div class="summary-card">
+      <span class="summary-icon">🔍</span>
+      <div class="summary-title">No tracking</div>
+      <div class="summary-desc">No analytics, no ads, no third-party SDKs.</div>
+    </div>
+  </div>
+
+  <div class="policy-body">
+
+    <div class="policy-section">
+      <h2>Overview</h2>
+      <p>Pawsitive Pals ("the app", "we", "us") is a daily affirmation app for iOS developed by an independent developer. This privacy policy explains how we handle information when you use the app.</p>
+      <div class="highlight-box">
+        <p><strong>The simple version:</strong> Pawsitive Pals does not collect, transmit, store, or share any personal data. The app works entirely on your device, with no internet connection required and no servers involved.</p>
+      </div>
+    </div>
+
+    <div class="policy-section">
+      <h2>Information We Do Not Collect</h2>
+      <p>We want to be explicit. Pawsitive Pals does not collect any of the following:</p>
+      <ul>
+        <li>Your name, email address, or any contact information</li>
+        <li>Your location, GPS data, or IP address</li>
+        <li>Device identifiers, advertising IDs, or fingerprinting data</li>
+        <li>Usage statistics, analytics, or behavioural data</li>
+        <li>Crash reports or diagnostic data sent to our servers</li>
+        <li>Microphone, camera, or photo library data</li>
+        <li>Health data or any sensitive personal information</li>
+        <li>Payment information of any kind</li>
+      </ul>
+    </div>
+
+    <div class="policy-section">
+      <h2>Data Stored on Your Device</h2>
+      <p>The app stores a small amount of data locally on your device using Apple's standard UserDefaults system. This data never leaves your phone. It includes:</p>
+      <ul>
+        <li>Your chosen nickname (entered voluntarily during onboarding)</li>
+        <li>Your selected affirmation tone preference</li>
+        <li>Your selected daily moment preference</li>
+        <li>Your daily streak count and last-opened date</li>
+        <li>Any affirmations you have saved as favourites</li>
+        <li>Whether you have completed the onboarding flow</li>
+      </ul>
+      <p>This data is stored only on your device. It is not backed up to our servers, not accessible to us, and not shared with anyone. You can delete all of it at any time by deleting the app.</p>
+    </div>
+
+    <div class="policy-section">
+      <h2>Third-Party Services</h2>
+      <p>Pawsitive Pals does not integrate any third-party SDKs, analytics platforms, advertising networks, or tracking tools. There are no third-party services of any kind embedded in the app.</p>
+      <p>The only network interaction the app may make is through <strong>Apple's native share sheet</strong>, which is triggered only when you explicitly tap "Share" to send an affirmation. This uses Apple's built-in iOS functionality and is governed by Apple's own privacy policy.</p>
+    </div>
+
+    <div class="policy-section">
+      <h2>Children's Privacy</h2>
+      <p>Pawsitive Pals does not knowingly collect any information from anyone, including children under the age of 13. Because we collect no data at all, the app is safe for users of all ages from a data privacy perspective. Parents and guardians should use their own judgement regarding content appropriateness.</p>
+    </div>
+
+    <div class="policy-section">
+      <h2>iCloud & Backups</h2>
+      <p>The app uses Apple's <strong>UserDefaults</strong> for local storage, not iCloud or CloudKit. Your preferences and favourites are stored locally on your device only. If you back up your device to iCloud or iTunes, your device backup may include this local data as part of the standard iOS backup process — this is handled entirely by Apple and is subject to Apple's own privacy practices.</p>
+    </div>
+
+    <div class="policy-section">
+      <h2>Your Rights</h2>
+      <p>Because we collect no personal data, there is nothing for us to provide, correct, export, or delete on our end. All data associated with the app lives on your device and is fully under your control at all times.</p>
+      <p>To delete all app data: <strong>delete the app from your device.</strong> iOS will remove all locally stored data when you uninstall the app.</p>
+    </div>
+
+    <div class="policy-section">
+      <h2>Changes to This Policy</h2>
+      <p>If we ever update this privacy policy, the new version will be posted at this URL with an updated date at the top. We will not retroactively change how previously collected data is handled — because we have none.</p>
+      <p>Any future version of the app that introduces data collection would require a new App Store release with updated App Store privacy labels, updated policy, and explicit user consent where required.</p>
+    </div>
+
+    <div class="policy-section">
+      <h2>Contact</h2>
+      <p>If you have any questions about this privacy policy or the app, you are welcome to reach out:</p>
+      <p>📧 <a href="mailto:hello@yourdomain.com">hello@yourdomain.com</a></p>
+      <p style="margin-top: 20px; font-size: 13px; color: var(--muted);">Pawsitive Pals is an independent iOS app. This privacy policy was last updated in March 2026.</p>
+    </div>
+
+  </div>
+
+  <footer>
+    <span>🐾 Pawsitive Pals &nbsp;·&nbsp; <a href="index.html">Home</a> &nbsp;·&nbsp; <a href="mailto:hello@yourdomain.com">Contact</a></span>
+  </footer>
+
+</body>
+</html>
